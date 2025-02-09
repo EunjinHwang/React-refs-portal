@@ -6,6 +6,7 @@ export default function Player() {
   const [enteredPlayername, setEnteredPlayername] = useState(null);
   function handleClick(){
     setEnteredPlayername(playerName.current.value);
+    playerName.current.value ='';
   }
   return (
     <section id="player">
